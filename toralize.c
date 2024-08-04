@@ -1,7 +1,3 @@
-static void __attribute__((constructor)) lib_init(void) {
-    DEBUG_PRINT("toralize.so constructor called");
-}
-
 #include "toralize.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -16,6 +12,10 @@ static void __attribute__((constructor)) lib_init(void) {
 #include <arpa/inet.h>
 
 #define DEBUG_PRINT(fmt, ...) fprintf(stderr, "DEBUG: " fmt "\n", ##__VA_ARGS__)
+
+static void __attribute__((constructor)) lib_init(void) {
+    DEBUG_PRINT("toralize.so constructor called");
+}
 
 #define TIMEOUT_SECONDS 10
 #define POLL_TIMEOUT 5000 // 5 seconds in milliseconds
