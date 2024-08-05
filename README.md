@@ -12,7 +12,6 @@ Toralize is a command-line tool that routes curl requests through the Tor networ
 6. [Troubleshooting](#troubleshooting)
 7. [Limitations](#limitations)
 8. [Contributing](#contributing)
-9. [License](#license)
 
 ## Overview
 
@@ -97,10 +96,6 @@ If no URL is provided, toralize_curl will return your Tor IP address.
 ## Contributing
 
 Contributions to improve toralize are welcome. Please feel free to submit pull requests or open issues to suggest improvements or report bugs.
-
-## License
-
-[Specify your chosen license here, e.g., MIT, GPL, etc.]
 
 ---
 
